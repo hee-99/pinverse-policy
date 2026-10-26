@@ -7,7 +7,7 @@
 <style>
   body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic", sans-serif; line-height: 1.7; max-width: 800px; margin: 0 auto; padding: 32px 20px 80px; color: #1c1c1e; background: #fff; }
   h1 { font-size: 24px; margin-bottom: 4px; }
-  h2 { font-size: 18px; margin-top: 40px; border-bottom: 2px solid #16A34A; padding-bottom: 6px; }
+  h2 { font-size: 18px; margin-top: 40px; border-bottom: 2px solid #65A30D; padding-bottom: 6px; }
   h3 { font-size: 15px; margin-top: 20px; }
   p, li { font-size: 14px; color: #333; }
   table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13px; }
@@ -15,248 +15,321 @@
   th { background: #f5f3ee; }
   .meta { color: #6B7280; font-size: 13px; margin-bottom: 24px; }
   .lang-divider { margin: 60px 0; border: none; border-top: 4px solid #1c1c1e; }
-  .note { background: #F0FDF4; border-left: 4px solid #16A34A; padding: 10px 14px; font-size: 13px; margin: 12px 0; }
+  .note { background: #F7FEE7; border-left: 4px solid #65A30D; padding: 10px 14px; font-size: 13px; margin: 12px 0; }
+  .lang-links { font-size: 13px; margin-bottom: 20px; }
 </style>
 </head>
 <body>
 
-<h1>핀버스 개인정보처리방침</h1>
+<p class="lang-links"><a href="#ko">한국어</a> · <a href="#en">English</a></p>
+
+<h1 id="ko">핀버스 개인정보처리방침</h1>
 <p class="meta">
-  시행일자: 2026-07-18 &nbsp;|&nbsp; 최종 수정일: 2026-07-19<br>
-  운영자: 핀버스 Dev &nbsp;|&nbsp; 연락처: jhwnss@gmail.com
+  시행일자: 2026-10-26 &nbsp;|&nbsp; 최종 수정일: 2026-10-26<br>
+  운영자: 장희성 (핀버스) &nbsp;|&nbsp; 연락처: jhwnss@gmail.com
 </p>
 
 <p>
-핀버스(이하 "회사" 또는 "앱")는 이용자의 개인정보를 중요시하며, 「개인정보 보호법」 등 관련 법령을 준수하고 있습니다.
-본 개인정보처리방침을 통해 이용자가 제공하는 개인정보가 어떠한 목적과 방식으로 이용되고 있으며,
-개인정보 보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.
+핀버스(이하 "앱")는 이용자의 개인정보를 중요하게 생각하며 「개인정보 보호법」 등 관련 법령을 준수합니다.
+이 방침은 앱이 어떤 정보를 어떤 목적으로 수집·이용·보관하는지, 그리고 이용자가 어떻게 정보를 관리할 수 있는지 안내합니다.
 </p>
 
 <div class="note">
-핀버스는 별도의 자체 서버를 운영하지 않으며, 앱에서 생성되는 데이터(핀, 프로필, 커뮤니티 등)는
-전부 <strong>이용자 기기 내부에만 저장</strong>됩니다. 회사는 이 데이터를 수집·보관·전송하지 않습니다.
+핀버스는 장소(핀)를 기록하고 다른 사람과 공유하는 서비스입니다. 서비스 제공을 위해 계정 정보, 핀(사진·위치 포함),
+팔로우·커뮤니티 활동 정보를 <strong>Google Firebase 서버</strong>에 저장합니다.
+핀은 이용자가 등록할 때 고른 공개 범위(전체 공개 / 팔로워만 / 나만 보기)에 따라 다른 이용자에게 보입니다.
 </div>
 
-<h2>1. 수집하는 개인정보 항목 및 수집 방법</h2>
+<h2>1. 수집하는 개인정보 항목</h2>
 
-<h3>1-1. 회원가입/로그인 시</h3>
+<h3>1-1. 회원가입·로그인 시</h3>
 <table>
-<tr><th>로그인 방식</th><th>수집 항목</th><th>비고</th></tr>
-<tr><td>카카오 로그인</td><td>닉네임, 이메일(선택 동의 시), 프로필 사진 URL</td><td>카카오 계정 정보 제공 동의 범위에 따름</td></tr>
-<tr><td>네이버 로그인</td><td>이름/닉네임, 이메일(선택), 프로필 사진 URL</td><td>네이버 계정 정보 제공 동의 범위에 따름</td></tr>
-<tr><td>구글 로그인</td><td>이름, 이메일, 프로필 사진 URL</td><td>-</td></tr>
-<tr><td>애플 로그인</td><td>이름(선택), 이메일(선택, Apple 릴레이 이메일일 수 있음)</td><td>-</td></tr>
-<tr><td>이메일 자체 가입</td><td>이름, 이메일, 비밀번호(암호화 저장)</td><td>비밀번호는 SHA-256 해시로 저장</td></tr>
-<tr><td>게스트(테스트) 로그인</td><td>없음 (임시 기기 내 식별자만 생성)</td><td>-</td></tr>
+<tr><th>로그인 방식</th><th>수집 항목</th></tr>
+<tr><td>카카오</td><td>닉네임, 프로필 사진 URL (카카오 계정 정보 제공 동의 범위 내)</td></tr>
+<tr><td>네이버</td><td>이름 또는 닉네임, 프로필 사진 URL (네이버 계정 정보 제공 동의 범위 내)</td></tr>
+<tr><td>구글</td><td>이름, 이메일, 프로필 사진 URL</td></tr>
+<tr><td>애플</td><td>이름(선택), 이메일(선택, Apple 릴레이 이메일일 수 있음)</td></tr>
+<tr><td>이메일 가입</td><td>닉네임, 이메일, 비밀번호 (비밀번호는 Google Firebase Authentication이 암호화하여 관리하며 운영자는 볼 수 없음)</td></tr>
+<tr><td>게스트</td><td>별도 정보 없음 (익명 계정 식별자만 생성)</td></tr>
+<tr><td>공통</td><td>계정 식별자(UID), 닉네임, 로그인 방식, 프로필 사진 URL</td></tr>
 </table>
 
-<h3>1-2. 서비스 이용 과정에서 자동/추가 수집되는 정보</h3>
+<h3>1-2. 서비스 이용 중 이용자가 등록하는 정보</h3>
 <table>
-<tr><th>항목</th><th>수집 목적</th><th>수집 방법</th></tr>
-<tr><td>위치정보 (GPS, 정밀/대략)</td><td>지도 표시, 주변 핀 탐색, 현재 위치 표시, 경로 안내</td><td>기기 위치 권한 (ACCESS_FINE_LOCATION / ACCESS_COARSE_LOCATION)</td></tr>
-<tr><td>카메라 촬영 사진</td><td>핀(장소 기록) 등록, 프로필 사진 설정</td><td>기기 카메라 권한</td></tr>
-<tr><td>갤러리 사진 및 사진의 EXIF 위치정보</td><td>핀 등록 시 촬영 위치 자동 인식</td><td>기기 사진 라이브러리 접근 권한</td></tr>
+<tr><th>항목</th><th>내용</th></tr>
+<tr><td>핀</td><td>장소 이름, 설명, 카테고리, 평가 점수, <strong>위치(위도·경도)</strong>, 공개 범위, 등록 시각</td></tr>
+<tr><td>핀 사진</td><td>핀 등록 시 촬영하거나 갤러리에서 고른 사진</td></tr>
+<tr><td>팔로우</td><td>내가 팔로우한 사람, 나를 팔로우한 사람</td></tr>
+<tr><td>커뮤니티</td><td>내가 만든 커뮤니티의 이름·소개·아이콘·커버 사진·공개 여부·초대 코드, 참여한 커뮤니티 목록, 커뮤니티에 공유한 핀</td></tr>
+<tr><td>반응</td><td>커뮤니티 핀에 누른 좋아요·저장</td></tr>
+<tr><td>신고·차단</td><td>내가 한 신고(대상, 사유, 시각), 내가 차단한 사용자 목록</td></tr>
 </table>
 
-<div class="note">
-위 정보는 모두 <strong>이용자 기기 내부(SharedPreferences 및 로컬 파일 저장소)에만 저장</strong>되며,
-회사의 서버로 전송되거나 회사가 별도로 수집·보관하지 않습니다.
-</div>
+<h3>1-3. 기기에서만 처리하는 정보 (서버로 저장하지 않음)</h3>
+<table>
+<tr><th>항목</th><th>이용 목적</th></tr>
+<tr><td>현재 위치 (GPS)</td><td>지도에 내 위치 표시, 핀 등록 시 위치 확인, 길찾기. 현재 위치를 계속 서버에 기록하지 않으며, 이용자가 핀을 등록할 때 그 핀의 위치만 저장됩니다.</td></tr>
+<tr><td>갤러리 사진의 촬영 위치(EXIF)</td><td>고른 사진이 현재 위치 근처에서 찍힌 것인지 확인</td></tr>
+<tr><td>프로필 편집에서 고른 사진</td><td>내 기기 화면에 프로필 사진으로 표시</td></tr>
+<tr><td>언어 설정, 캐시</td><td>앱 설정 유지 및 빠른 화면 표시</td></tr>
+</table>
 
 <h2>2. 개인정보의 이용 목적</h2>
 <ul>
-<li>회원 식별 및 로그인 상태 유지</li>
-<li>지도 기반 서비스 제공 (핀 등록/조회, 경로 안내, 주변 정보 표시)</li>
-<li>커뮤니티/소셜 기능 제공 (그룹 참여, 팔로잉, 프로필 표시)</li>
-<li>서비스 부정 이용 방지 및 계정 보호</li>
+<li>회원 식별, 로그인 상태 유지, 회원 탈퇴 처리</li>
+<li>핀 등록·조회, 지도 표시, 길찾기, 장소 정보 제공</li>
+<li>팔로우, 커뮤니티, 좋아요·저장, 커뮤니티 랭킹 등 공유 기능 제공</li>
+<li>신고된 콘텐츠 검토·삭제, 부정 이용 방지 등 서비스 운영</li>
 </ul>
 
-<h2>3. 개인정보의 보유 및 이용 기간</h2>
-<p>
-회사는 별도의 서버를 운영하지 않으므로, 모든 개인정보 및 서비스 이용 데이터는 <strong>이용자의 기기에만 저장</strong>됩니다.
-따라서:
-</p>
+<h2>3. 다른 이용자에게 공개되는 정보</h2>
 <ul>
-<li>이용자가 앱 내 "로그아웃"을 하더라도 기기에 저장된 데이터는 유지될 수 있습니다.</li>
-<li>이용자가 앱을 <strong>삭제(제거)하면 기기에 저장된 모든 정보(계정 정보, 핀, 사진 등)가 함께 영구 삭제</strong>됩니다.</li>
-<li>회사는 별도로 백업된 개인정보를 보유하지 않으므로, 앱 삭제 후에는 데이터를 복구할 수 없습니다.</li>
+<li><strong>전체 공개 핀</strong>: 로그인한 모든 이용자가 핀의 사진·위치·설명과 작성자 닉네임·프로필 사진을 볼 수 있습니다.</li>
+<li><strong>팔로워만</strong>: 나를 팔로우한 이용자만 볼 수 있습니다.</li>
+<li><strong>나만 보기</strong>: 본인만 볼 수 있습니다.</li>
+<li><strong>커뮤니티에 공유한 핀</strong>: 공개 범위와 별개로, 공유한 커뮤니티를 볼 수 있는 이용자에게 보입니다
+(공개 커뮤니티는 로그인한 모든 이용자, 비공개 커뮤니티는 멤버만).</li>
+<li>닉네임, 프로필 사진, 팔로워·팔로잉 수, 커뮤니티 랭킹(좋아요·핀·저장 수)은 다른 이용자에게 보일 수 있습니다.</li>
+</ul>
+<p>핀에는 정확한 위치가 포함되므로, 집이나 직장 등 개인적인 장소는 "나만 보기"로 등록하시기를 권합니다.</p>
+
+<h2>4. 보유 및 이용 기간</h2>
+<p>개인정보는 <strong>회원 탈퇴 시까지</strong> 보유하며, 탈퇴하면 지체 없이 삭제합니다.</p>
+<ul>
+<li>핀을 삭제하면 해당 핀과 사진이 서버에서 삭제됩니다.</li>
+<li>커뮤니티를 삭제하면 그 커뮤니티의 멤버 정보, 공유된 핀, 좋아요·저장 기록, 커버 사진이 삭제됩니다.</li>
+<li>신고 내용은 운영자만 볼 수 있으며, 처리(삭제 또는 종료)되면 삭제됩니다. 신고된 사람에게 신고자를 알리지 않습니다.</li>
+<li>커뮤니티에서 나가도 그 커뮤니티에 이미 공유한 핀은 남습니다. 핀을 지우려면 회원 탈퇴를 하거나 운영자에게 요청할 수 있습니다.</li>
 </ul>
 
-<h2>4. 개인정보의 제3자 제공</h2>
-<p>회사는 이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만 서비스 제공을 위해 아래와 같이 외부 사업자의 API를 이용하며,
-이 과정에서 최소한의 정보가 해당 사업자에게 전달됩니다.</p>
+<h2>5. 개인정보의 파기 절차 및 방법</h2>
+<p>앱의 <strong>프로필 → 설정 → 회원 탈퇴</strong>를 누르면 아래 정보가 서버에서 즉시 삭제됩니다.</p>
+<ul>
+<li>로그인 계정과 프로필</li>
+<li>내가 등록한 핀과 사진</li>
+<li>팔로우·팔로워 관계</li>
+<li>내가 만든 커뮤니티 전체 (멤버, 공유된 핀, 좋아요·저장, 커버 사진 포함)</li>
+<li>참여한 커뮤니티의 멤버 정보, 그 커뮤니티에 공유한 내 핀, 내가 누른 좋아요·저장</li>
+<li>내가 한 신고와 차단 목록</li>
+<li>기기에 저장된 계정 정보와 핀 캐시</li>
+</ul>
+<p>전자적 파일은 복구할 수 없는 방법으로 삭제합니다. 법령에 따라 보관해야 하는 정보는 없습니다.</p>
 
+<h2>6. 개인정보 처리 위탁 및 국외 이전</h2>
+<p>앱은 서비스 제공을 위해 아래와 같이 개인정보 처리를 위탁하며, 일부 정보는 국외에 저장·처리됩니다.</p>
 <table>
-<tr><th>제공받는 자</th><th>제공 항목</th><th>제공 목적</th></tr>
-<tr><td>Google (Maps Platform)</td><td>위경도 좌표</td><td>지도 표시, 경로(길찾기) 계산</td></tr>
-<tr><td>Google (Gemini API)</td><td>장소명, 대략적 위경도 좌표 (개인 식별 정보 미포함)</td><td>랜드마크(관광지) 설명 정보 생성</td></tr>
-<tr><td>Wikipedia (한국어 위키백과)</td><td>장소명 검색어</td><td>랜드마크 설명 정보 조회</td></tr>
-<tr><td>카카오 / 네이버 / 구글 / 애플</td><td>로그인 인증 정보</td><td>소셜 로그인 인증 (각 사업자 자체 개인정보처리방침 적용)</td></tr>
+<tr><th>수탁자 (국가)</th><th>위탁 업무</th><th>이전 항목</th><th>저장 위치 · 이전 시점 · 방법</th><th>보유 기간</th></tr>
+<tr><td>Google LLC (미국)<br>Firebase Authentication</td><td>회원 인증</td><td>계정 식별자, 이메일, 로그인 방식</td><td>Google 데이터센터 · 로그인 시 · 네트워크 전송</td><td>회원 탈퇴 시까지</td></tr>
+<tr><td>Google LLC (미국)<br>Cloud Functions for Firebase</td><td>카카오·네이버 로그인 확인</td><td>카카오·네이버 액세스 토큰, 회원번호</td><td>대한민국 서울 리전 · 로그인 시 · 네트워크 전송</td><td>저장하지 않음 (확인 즉시 폐기)</td></tr>
+<tr><td>Google LLC (미국)<br>Cloud Firestore</td><td>서비스 데이터 저장</td><td>프로필, 핀 정보, 팔로우, 커뮤니티, 좋아요·저장</td><td>대한민국 서울 리전 · 등록 시 · 네트워크 전송</td><td>회원 탈퇴 시까지</td></tr>
+<tr><td>Google LLC (미국)<br>Cloud Storage for Firebase</td><td>사진 저장</td><td>핀 사진, 커뮤니티 커버 사진</td><td>미국 아이오와(us-central1) · 업로드 시 · 네트워크 전송</td><td>회원 탈퇴 또는 삭제 시까지</td></tr>
+</table>
+<p>국외 이전을 원하지 않으시면 사진을 첨부한 핀 등록을 하지 않거나 회원 탈퇴를 할 수 있습니다. 다만 이 경우 핀 등록 등 핵심 기능을 이용할 수 없습니다.</p>
+
+<h2>7. 외부 서비스 이용</h2>
+<p>앱은 아래 외부 서비스를 이용하며, 기능 제공에 필요한 최소한의 정보만 전달합니다. 이용자의 이름·이메일 등 계정 정보는 전달하지 않습니다.</p>
+<table>
+<tr><th>서비스</th><th>전달 정보</th><th>목적</th></tr>
+<tr><td>Google Maps Platform</td><td>지도 영역의 좌표, 길찾기 출발지·도착지 좌표</td><td>지도 표시, 길찾기</td></tr>
+<tr><td>Google Gemini API</td><td>장소 이름, 핀 좌표</td><td>장소 설명(AI 정보) 생성</td></tr>
+<tr><td>Google 번역</td><td>번역할 문구 (핀 이름·설명 등)</td><td>다른 언어로 보기</td></tr>
+<tr><td>위키백과 (한국어)</td><td>장소 이름</td><td>장소 정보 조회</td></tr>
+<tr><td>카카오 / 네이버 / 구글 / 애플</td><td>로그인 인증 정보</td><td>소셜 로그인 (각 사업자의 개인정보처리방침 적용)</td></tr>
 </table>
 
-<p>위 사업자들은 각자의 개인정보처리방침에 따라 정보를 처리하며, 회사는 이용자의 계정 식별정보(이름, 이메일 등)를
-이들 사업자에게 별도로 전송하지 않습니다.</p>
-
-<h2>5. 개인정보 처리 위탁</h2>
-<p>회사는 원활한 서비스 제공을 위해 아래와 같이 업무를 위탁하고 있습니다.</p>
-<table>
-<tr><th>수탁자</th><th>위탁 업무 내용</th></tr>
-<tr><td>Google LLC</td><td>지도 렌더링, 경로 안내, AI 기반 장소 정보 생성</td></tr>
-</table>
-
-<h2>6. 이용자 및 법정대리인의 권리와 행사 방법</h2>
-<ul>
-<li>이용자는 언제든지 앱 내 프로필 화면에서 본인의 정보(이름, 사진 등)를 열람·수정할 수 있습니다.</li>
-<li>이용자는 앱 삭제를 통해 본인과 관련된 모든 정보를 즉시 파기할 수 있습니다.</li>
-<li>기타 문의사항은 아래 연락처로 문의하실 수 있습니다.</li>
-</ul>
-
-<h2>7. 개인정보의 파기 절차 및 방법</h2>
-<p>
-모든 개인정보는 이용자 기기 내에 저장되며, 앱 삭제 시 운영체제(Android/iOS)에 의해 관련 파일이 함께 삭제됩니다.
-회사는 별도의 서버 저장소를 운영하지 않으므로 추가적인 파기 절차가 필요하지 않습니다.
-</p>
-
-<h2>8. 수집하는 권한 및 이용 목적 (Android/iOS 접근 권한 고지)</h2>
+<h2>8. 앱 접근 권한</h2>
 <table>
 <tr><th>권한</th><th>필수/선택</th><th>이용 목적</th></tr>
-<tr><td>위치정보 (정밀/대략)</td><td>필수</td><td>지도 표시, 주변 핀 탐색, 경로 안내</td></tr>
-<tr><td>카메라</td><td>필수</td><td>핀 등록용 사진 촬영</td></tr>
-<tr><td>사진/미디어</td><td>필수</td><td>핀 등록 시 갤러리 사진 선택 및 위치정보(EXIF) 추출</td></tr>
-<tr><td>인터넷</td><td>필수</td><td>지도/경로/랜드마크 정보 API 통신, 소셜 로그인</td></tr>
+<tr><td>위치 (정밀/대략)</td><td>선택</td><td>지도에 내 위치 표시, 핀 등록 위치 확인, 길찾기</td></tr>
+<tr><td>카메라</td><td>선택</td><td>핀 사진 촬영</td></tr>
+<tr><td>사진/미디어</td><td>선택</td><td>갤러리 사진으로 핀 등록, 프로필·커버 사진 선택</td></tr>
 </table>
-<p>이용자는 기기 설정에서 위 권한을 언제든지 철회할 수 있으며, 이 경우 관련 기능(지도, 사진 등록 등) 이용이 제한될 수 있습니다.</p>
+<p>선택 권한은 허용하지 않아도 앱을 이용할 수 있으나 해당 기능은 제한됩니다. 권한은 기기 설정에서 언제든지 변경할 수 있습니다.</p>
 
-<h2>9. 광고 및 분석 도구</h2>
-<p>현재 앱은 광고 SDK 및 별도의 이용자 행태 분석(애널리틱스) 도구를 사용하지 않습니다.</p>
+<h2>9. 이용자의 권리와 행사 방법</h2>
+<ul>
+<li>프로필 화면에서 닉네임 등 본인 정보를 확인·수정할 수 있습니다.</li>
+<li>핀, 커뮤니티를 직접 삭제할 수 있습니다.</li>
+<li>회원 탈퇴로 서버에 저장된 정보를 즉시 삭제할 수 있습니다.</li>
+<li>그 밖의 열람·정정·삭제·처리정지 요청은 아래 연락처로 하실 수 있으며, 지체 없이 처리합니다.</li>
+</ul>
 
-<h2>10. 개인정보 보호책임자</h2>
+<h2>10. 만 14세 미만 아동</h2>
+<p>앱은 만 14세 미만 아동을 대상으로 하지 않으며, 만 14세 미만 아동의 개인정보를 알고 수집하지 않습니다.</p>
+
+<h2>11. 안전성 확보 조치</h2>
+<ul>
+<li>모든 통신은 암호화(HTTPS/TLS)하여 전송합니다.</li>
+<li>서버 보안 규칙으로 본인 데이터와 공개 범위에 맞는 데이터만 읽고 쓸 수 있게 제한합니다.</li>
+<li>관리자 권한은 운영자 계정에만 서버에서 부여합니다.</li>
+</ul>
+
+<h2>12. 광고 및 분석 도구</h2>
+<p>앱은 광고 SDK와 이용자 행태 분석(애널리틱스) 도구를 사용하지 않습니다.</p>
+
+<h2>13. 개인정보 보호책임자</h2>
 <table>
-<tr><td>담당자</td><td>핀버스 Dev (개발자)</td></tr>
+<tr><td>성명</td><td>장희성 (핀버스 운영자)</td></tr>
 <tr><td>이메일</td><td>jhwnss@gmail.com</td></tr>
 </table>
-<p>이용자는 서비스를 이용하며 발생한 모든 개인정보 관련 문의를 위 연락처로 하실 수 있습니다.</p>
+<p>개인정보 침해에 대한 신고나 상담은 개인정보침해신고센터(privacy.kisa.or.kr / 국번 없이 118)에도 하실 수 있습니다.</p>
 
-<h2>11. 고지의 의무</h2>
-<p>
-본 개인정보처리방침의 내용 추가, 삭제 및 수정이 있을 시에는 시행 최소 7일 전부터 앱 내 공지사항 또는
-본 문서를 통해 고지할 것입니다.
-</p>
+<h2>14. 방침의 변경</h2>
+<p>이 방침이 바뀌면 시행 7일 전부터 앱 또는 이 페이지를 통해 알립니다. 이용자 권리에 중요한 변경은 30일 전에 알립니다.</p>
 
 <hr class="lang-divider">
 
-<h1>Pinverse Privacy Policy</h1>
+<h1 id="en">Pinverse Privacy Policy</h1>
 <p class="meta">
-  Effective Date: 2026-07-18 &nbsp;|&nbsp; Last Updated: 2026-07-19<br>
-  Operator: Pinverse Dev &nbsp;|&nbsp; Contact: jhwnss@gmail.com
+  Effective Date: 2026-10-26 &nbsp;|&nbsp; Last Updated: 2026-10-26<br>
+  Operator: Heeseong Jang (Pinverse) &nbsp;|&nbsp; Contact: jhwnss@gmail.com
 </p>
 
 <p>
-Pinverse ("we", "the App") values your privacy. This Privacy Policy explains what information is collected,
-how it is used, and how it is protected when you use the Pinverse app.
+Pinverse ("the App") values your privacy. This policy explains what information the App collects, why,
+how long it is kept, and how you can control it. If the Korean and English versions differ, the Korean version prevails.
 </p>
 
 <div class="note">
-Pinverse does not operate its own backend server. All data created in the app (pins, profile, communities)
-is stored <strong>locally on your device only</strong>. We do not collect, transmit, or store this data on any server.
+Pinverse is a service for recording places ("pins") and sharing them with others. To provide it, we store your account info,
+pins (including photos and locations), and follow/community activity on <strong>Google Firebase servers</strong>.
+Each pin is visible to other users according to the visibility you choose when creating it (Everyone / Followers / Only me).
 </div>
 
 <h2>1. Information We Collect</h2>
-<h3>1-1. At Sign-up / Login</h3>
+
+<h3>1-1. Sign-up and Login</h3>
 <table>
 <tr><th>Login Method</th><th>Data Collected</th></tr>
-<tr><td>Kakao</td><td>Nickname, email (if consented), profile photo URL</td></tr>
-<tr><td>Naver</td><td>Name/nickname, email (if consented), profile photo URL</td></tr>
+<tr><td>Kakao</td><td>Nickname, profile photo URL (within the scope you consent to on Kakao)</td></tr>
+<tr><td>Naver</td><td>Name or nickname, profile photo URL (within the scope you consent to on Naver)</td></tr>
 <tr><td>Google</td><td>Name, email, profile photo URL</td></tr>
-<tr><td>Apple</td><td>Name (optional), email (optional, may be Apple relay email)</td></tr>
-<tr><td>Email sign-up</td><td>Name, email, password (stored as SHA-256 hash)</td></tr>
-<tr><td>Guest login</td><td>None (temporary local identifier only)</td></tr>
+<tr><td>Apple</td><td>Name (optional), email (optional; may be an Apple relay address)</td></tr>
+<tr><td>Email</td><td>Nickname, email, password (managed and encrypted by Google Firebase Authentication; we cannot see it)</td></tr>
+<tr><td>Guest</td><td>Nothing beyond an anonymous account identifier</td></tr>
+<tr><td>All methods</td><td>Account identifier (UID), nickname, login method, profile photo URL</td></tr>
 </table>
 
-<h3>1-2. Collected During Use</h3>
+<h3>1-2. Information You Create</h3>
 <table>
-<tr><th>Data</th><th>Purpose</th></tr>
-<tr><td>Location (GPS, precise/approximate)</td><td>Map display, nearby pin discovery, current location, directions</td></tr>
-<tr><td>Camera photos</td><td>Creating location "pins", profile photo</td></tr>
-<tr><td>Gallery photos and their EXIF location data</td><td>Auto-detecting the photo's capture location when creating a pin</td></tr>
+<tr><th>Item</th><th>Details</th></tr>
+<tr><td>Pins</td><td>Place name, description, category, ratings, <strong>location (latitude/longitude)</strong>, visibility, creation time</td></tr>
+<tr><td>Pin photos</td><td>Photos taken or chosen from the gallery when creating a pin</td></tr>
+<tr><td>Follows</td><td>People you follow and people who follow you</td></tr>
+<tr><td>Communities</td><td>Name, description, icon, cover photo, public/private setting and invite code of communities you create; communities you joined; pins you share to communities</td></tr>
+<tr><td>Reactions</td><td>Likes and saves on community pins</td></tr>
+<tr><td>Reports & blocks</td><td>Reports you submit (target, reason, time) and the list of users you block</td></tr>
 </table>
 
-<div class="note">
-All of the above is stored <strong>locally on your device only</strong> (SharedPreferences and local file storage)
-and is never transmitted to or stored on our servers, because we have none.
-</div>
+<h3>1-3. Processed on Your Device Only (not stored on our servers)</h3>
+<table>
+<tr><th>Item</th><th>Purpose</th></tr>
+<tr><td>Current location (GPS)</td><td>Showing your position on the map, verifying a pin's location, directions. We do not continuously record your location; only the location of a pin you create is stored.</td></tr>
+<tr><td>Capture location of gallery photos (EXIF)</td><td>Checking that a chosen photo was taken near your current location</td></tr>
+<tr><td>Photo chosen in profile editing</td><td>Displayed as your profile photo on your device</td></tr>
+<tr><td>Language setting, cache</td><td>Keeping your settings and loading screens faster</td></tr>
+</table>
 
-<h2>2. Purpose of Use</h2>
+<h2>2. How We Use Information</h2>
 <ul>
-<li>Member identification and login session management</li>
-<li>Map-based features (pin creation/viewing, directions, nearby information)</li>
-<li>Community/social features (groups, following, profile display)</li>
-<li>Preventing fraudulent use and protecting accounts</li>
+<li>Identifying members, keeping you signed in, processing account deletion</li>
+<li>Creating and viewing pins, map display, directions, place information</li>
+<li>Sharing features: follows, communities, likes/saves, community rankings</li>
+<li>Operating the service, including reviewing and removing reported content and preventing abuse</li>
 </ul>
 
-<h2>3. Retention Period</h2>
-<p>
-Because we operate no backend server, all personal data lives only on your device:
-</p>
+<h2>3. Information Visible to Other Users</h2>
 <ul>
-<li>Logging out in-app does not necessarily delete data already stored on the device.</li>
-<li><strong>Uninstalling the app permanently deletes all locally stored data</strong> (account info, pins, photos, etc.).</li>
-<li>We keep no backup copy, so data cannot be recovered after uninstallation.</li>
+<li><strong>Everyone</strong>: all signed-in users can see the pin's photo, location and description, plus the author's nickname and profile photo.</li>
+<li><strong>Followers</strong>: only users who follow you.</li>
+<li><strong>Only me</strong>: only you.</li>
+<li><strong>Pins shared to a community</strong>: regardless of visibility, visible to anyone who can view that community
+(all signed-in users for public communities, members only for private ones).</li>
+<li>Your nickname, profile photo, follower/following counts and community rankings (likes, pins, saves) may be visible to others.</li>
+</ul>
+<p>Pins contain exact locations. We recommend using "Only me" for personal places such as your home or workplace.</p>
+
+<h2>4. Retention</h2>
+<p>We keep your information <strong>until you delete your account</strong>, and delete it without delay afterwards.</p>
+<ul>
+<li>Deleting a pin removes the pin and its photo from our servers.</li>
+<li>Deleting a community removes its members, shared pins, likes/saves and cover photo.</li>
+<li>Reports are visible only to the operator and are deleted once handled. We never reveal the reporter to the reported user.</li>
+<li>Leaving a community does not remove pins you already shared there. To remove them, delete your account or contact us.</li>
 </ul>
 
-<h2>4. Third-Party Disclosure</h2>
-<p>We do not sell or share your personal data. To provide core features, the following third-party APIs receive
-the minimum data necessary:</p>
-<table>
-<tr><th>Recipient</th><th>Data Shared</th><th>Purpose</th></tr>
-<tr><td>Google (Maps Platform)</td><td>Latitude/longitude coordinates</td><td>Map rendering, route/direction calculation</td></tr>
-<tr><td>Google (Gemini API)</td><td>Place name, approximate coordinates (no personal identifiers)</td><td>Generating landmark description content</td></tr>
-<tr><td>Wikipedia (Korean)</td><td>Place name search query</td><td>Landmark information lookup</td></tr>
-<tr><td>Kakao / Naver / Google / Apple</td><td>Authentication data</td><td>Social login (governed by each provider's own privacy policy)</td></tr>
-</table>
-
-<h2>5. Data Processing Outsourcing</h2>
-<table>
-<tr><th>Processor</th><th>Task</th></tr>
-<tr><td>Google LLC</td><td>Map rendering, directions, AI-based landmark information generation</td></tr>
-</table>
-
-<h2>6. Your Rights</h2>
+<h2>5. Deletion</h2>
+<p>Tapping <strong>Profile → Settings → Delete Account</strong> immediately deletes from our servers:</p>
 <ul>
-<li>You can view/edit your profile information (name, photo, etc.) anytime in the app.</li>
-<li>You can permanently delete all your data by uninstalling the app.</li>
-<li>For any other inquiries, contact us using the information below.</li>
+<li>Your login account and profile</li>
+<li>Your pins and photos</li>
+<li>Your follow relationships</li>
+<li>Communities you created (including members, shared pins, likes/saves and cover photos)</li>
+<li>Your membership in other communities, pins you shared to them, and your likes/saves</li>
+<li>Reports you submitted and your block list</li>
+<li>Account info and pin cache stored on your device</li>
 </ul>
+<p>Electronic files are deleted in a way that cannot be recovered. We are not required by law to retain any of this information.</p>
 
-<h2>7. Data Deletion Procedure</h2>
-<p>
-All personal data resides on your device and is deleted by the OS (Android/iOS) when the app is uninstalled.
-Since we operate no server-side storage, no additional deletion procedure is necessary.
-</p>
+<h2>6. Processors and International Transfer</h2>
+<table>
+<tr><th>Processor (Country)</th><th>Task</th><th>Data</th><th>Location · When · How</th><th>Retention</th></tr>
+<tr><td>Google LLC (USA)<br>Firebase Authentication</td><td>Authentication</td><td>Account identifier, email, login method</td><td>Google data centers · at login · network transfer</td><td>Until account deletion</td></tr>
+<tr><td>Google LLC (USA)<br>Cloud Functions for Firebase</td><td>Kakao/Naver login verification</td><td>Kakao/Naver access token, member ID</td><td>Seoul, Korea region · at login · network transfer</td><td>Not stored (discarded right after verification)</td></tr>
+<tr><td>Google LLC (USA)<br>Cloud Firestore</td><td>Service data storage</td><td>Profile, pin info, follows, communities, likes/saves</td><td>Seoul, South Korea · when created · network transfer</td><td>Until account deletion</td></tr>
+<tr><td>Google LLC (USA)<br>Cloud Storage for Firebase</td><td>Photo storage</td><td>Pin photos, community cover photos</td><td>Iowa, USA (us-central1) · on upload · network transfer</td><td>Until deletion or account deletion</td></tr>
+</table>
+<p>If you do not want your photos transferred abroad, you may refrain from attaching photos or delete your account, though core features such as creating pins will then be unavailable.</p>
+
+<h2>7. Third-Party Services</h2>
+<p>We send only the minimum data needed. Your name, email and other account information are not sent to these services.</p>
+<table>
+<tr><th>Service</th><th>Data Sent</th><th>Purpose</th></tr>
+<tr><td>Google Maps Platform</td><td>Map area coordinates, origin/destination coordinates for directions</td><td>Map display, directions</td></tr>
+<tr><td>Google Gemini API</td><td>Place name, pin coordinates</td><td>Generating place descriptions (AI info)</td></tr>
+<tr><td>Google Translate</td><td>Text to translate (e.g., pin names and descriptions)</td><td>Viewing content in other languages</td></tr>
+<tr><td>Wikipedia (Korean)</td><td>Place name</td><td>Place information lookup</td></tr>
+<tr><td>Kakao / Naver / Google / Apple</td><td>Authentication data</td><td>Social login (each provider's own privacy policy applies)</td></tr>
+</table>
 
 <h2>8. App Permissions</h2>
 <table>
 <tr><th>Permission</th><th>Required?</th><th>Purpose</th></tr>
-<tr><td>Location (precise/approximate)</td><td>Required</td><td>Map display, nearby pin discovery, directions</td></tr>
-<tr><td>Camera</td><td>Required</td><td>Taking photos for pins</td></tr>
-<tr><td>Photos/Media</td><td>Required</td><td>Selecting gallery photos and extracting EXIF location for pins</td></tr>
-<tr><td>Internet</td><td>Required</td><td>Map/directions/landmark API calls, social login</td></tr>
+<tr><td>Location (precise/approximate)</td><td>Optional</td><td>Showing your position, verifying pin locations, directions</td></tr>
+<tr><td>Camera</td><td>Optional</td><td>Taking pin photos</td></tr>
+<tr><td>Photos/Media</td><td>Optional</td><td>Creating pins from gallery photos, choosing profile/cover photos</td></tr>
 </table>
-<p>You may revoke these permissions anytime in device settings; doing so may limit related features.</p>
+<p>You can use the App without granting optional permissions, but related features will be limited. You can change permissions anytime in device settings.</p>
 
-<h2>9. Advertising & Analytics</h2>
-<p>The app currently uses no advertising SDK and no user-behavior analytics tool.</p>
+<h2>9. Your Rights</h2>
+<ul>
+<li>View and edit your profile info in the Profile screen.</li>
+<li>Delete your pins and communities yourself.</li>
+<li>Delete all server-stored information immediately by deleting your account.</li>
+<li>For other requests (access, correction, deletion, suspension of processing), contact us below; we will respond without delay.</li>
+</ul>
 
-<h2>10. Privacy Officer / Contact</h2>
+<h2>10. Children</h2>
+<p>The App is not directed to children under 14, and we do not knowingly collect personal information from children under 14.</p>
+
+<h2>11. Security</h2>
+<ul>
+<li>All communication is encrypted (HTTPS/TLS).</li>
+<li>Server security rules restrict reading and writing to your own data and data permitted by its visibility.</li>
+<li>Administrator privileges are granted server-side to the operator's account only.</li>
+</ul>
+
+<h2>12. Advertising & Analytics</h2>
+<p>The App uses no advertising SDK and no user-behavior analytics tool.</p>
+
+<h2>13. Contact</h2>
 <table>
-<tr><td>Contact</td><td>Pinverse Dev (Developer)</td></tr>
+<tr><td>Name</td><td>Heeseong Jang (Operator of Pinverse)</td></tr>
 <tr><td>Email</td><td>jhwnss@gmail.com</td></tr>
 </table>
 
-<h2>11. Changes to This Policy</h2>
-<p>
-Material changes to this policy will be announced in-app or via this document at least 7 days before taking effect.
-</p>
+<h2>14. Changes to This Policy</h2>
+<p>We will announce changes in the App or on this page at least 7 days before they take effect, and at least 30 days before for changes that materially affect your rights.</p>
 
 </body>
 </html>
